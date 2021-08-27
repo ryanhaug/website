@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <link rel="stylesheet" href="../styles.css">
+ <style>
+ /* The sidebar menu */
+ .sidenav {
+   width: 160px; /* Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   overflow-x: hidden; /* Disable horizontal scroll */ 
+   padding-top: 200px;
+ }
+ 
+ /* The navigation menu links */
+ .sidenav a {
+   padding: 6px 8px 6px 16px;
+   display: block;
+ }
+
+ /* Style page content */
+ .main {
+   margin-left: 160px; /* Same as the width of the sidebar */
+   padding: 0px 10px;
+ }
+ 
+ /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ } 
+ </style>
+</head>
+<body>
+
+<img src="../Logo.png" style="height:50px;">
+<div style="text-align:center;">
+<a href="../index.html">Home</a>
+<a href="../blog/blog.html">Blog</a>
+<a href="./projects.html">Projects</a>
+<a href="../about/about.html">About</a>
+<a href="../misc/misc.html">Misc</a>
+</div>
+
+<h1 style="text-align:center;background-color:#383A59">Jet Engine Project</h1>
+<div class="sidenav">
+ <a href="./jet-engine.html">Jet Engine</a>
+ <a href="#">8-bit Computer</a>
+ <a href="./alarm-clock.html">Alarm Clock</a>
+ <a href="#">Article4</a>
+</div>
+
+<div class="main">
+<p>Date: Jun 7, 2021</p>
+<h2>Turbojet Engine Research</h2>
+<p>To start with let's go over the basic principles of jet engines, "suck, squeeze, bang,blow".</p>
+<ol>
+ <li>Air is drawn into intake</li>
+ <li>Air is compressed which leads to a rise in air pressure</li>
+ <li>Fuel is burned in combustion chamber</li>
+ <li>Combustion imparts heat on the air which causes it to expand rapidly and produce high speed, hot airflow</li>
+</ol>
+<p>A turbojet engine consits of three parts: the compressor, the burner, and the turbine. </p>
+<h3>The Compressor</h3>
+<p>There are two types of compressors, axial and centrifugal:</p>
+<ul>
+ <li>In an axial compressor the flow through the compressor travels parallel to the axis of rotation</li>
+ <li>In a centrifugal compressor the flow through the compressor is turned perpendicular to the axis of rotation</li>
+</ul>
+<p>Most modern engines use axial compressor because they can achieve higher compression ratios (today's compressors have a ratio of over 40:1).</p>
+<p>Jet turbines generally have two different compressors, each on its own shaft, a high pressure and a low pressure compressor.</p>
+<ul>
+ <li>Ram pressure or Ram effect is more air being forced into engine</li>
+ <li>Static pressure is pressure without taking into account pressure caused by motion</li>
+ <li>Total pressure is the sum of Static and Ram pressure</li>
+ <img src=./images/rotor-and-stator.jpg style="height:400px;">
+ <li>Stator vanes slow down air and increase Static pressure</li>
+ <li>Rotor blades increase air velocity and increase Ram pressure</li>
+ <li>Rotor blade velocity increase and stator vane velocity decrease effectively canel each other out</li>
+</ul>
+<p>The tapered gaspath in an axial compressor is as a <strong><em>result</em></strong> of compression, not the cause!!</p>
+<p>As pressure goes up (because rotors and stators), volume of air goes down.</p>
+<p>remember: P<sub>1</sub>V<sub>1</sub>=P<sub>2</sub>V<sub>2</sub></p>
+<p>P = pressure</p>
+<p>V = volume</p>
+<h3>The Burner/Combustor/Combustion Chamber</h3>
+<p>The combustor is where combustion occurs and where the air temperature is raised with a slight decrease in pressure. When designing a combustion chamber, it is important to follow these design criteria:</p>
+<ul>
+ <li>Completely combust fuel</li>
+ <li>Low pressure loss across the combustor, the turbine which the compressor feeds needs high pressure to operate efficiently</li>
+ <li>The flame must be held inside the combustor. Combustion further back in the engine can result in damage to the turbines</li>
+ <li>Efficiently mix air and fuel to ensure efficient combustion</li>
+</ul>
+<p>There are three types of combustors:</p>
+<ul>
+ <li>Can: each Can has both a liner and a casing</li>
+ <li>Can-Annular: Can-shaped individual liners with annular casing</li>
+ <li>Annular: annular liner and casing</li>
+</ul>
+<h3>Airflow Paths in Combustor:</h3>
+<p>Primary air (~20-40%): Main combustion air, fed either through the main channel in the dome of the combustor or the first set of liner holes.</p>
+<p>Dilution air (~40-60%): Airflow injected through holes in liner at the end of the combustion chamber to cool the air before it reaches the turbine stages.</p>
+<img src=./images/1920px-Combustor_diagram_airflow.jpg style="height:400px;">
+<p style="color: #6272a4;">Diagram of a gas turbine combustor. Sourced from wikimedia commons under creative commons license.</p>
+<p>Use some of the excess air to cool the combustor walls, keep flame away from liner. Re-circulating vortex infront of fuel nozzle promotes air mixing and holds flame.</p>
+<h3>Sources From Research</h3>
+<p>overall:</p>
+<a href="https://www.summaryplanet.com/engineering/Jet-engine-design.html">https://www.summaryplanet.com/engineering/Jet-engine-design.html</a>
+<br>
+<p>compressor:</p>
+<a href="https://nptel.ac.in/content/storage2/courses/112104117/chapter_4/4_9.html">https://nptel.ac.in/content/storage2/courses/112104117/chapter_4/4_9.html</a>
+<br><br>
+<a href="https://en.wikipedia.org/wiki/Axial_compressor">https://en.wikipedia.org/wiki/Axial_compressor</a>
+<br><br>
+<a href="https://aerospaceengineeringblog.com/jet-engine-compressor/">https://aerospaceengineeringblog.com/jet-engine-compressor/</a>
+<br>
+<p>combustor:</p>
+<a href="https://www.sciencedirect.com/science/article/pii/S2212540X16300025?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S2212540X16300025?via%3Dihub</a>
+<p>nozzle:</p>
+<a href="https://en.wikipedia.org/wiki/Isentropic_nozzle_flow">https://en.wikipedia.org/wiki/Isentropic_nozzle_flow</a>
+<p>airfoils and lift:</p>
+<a href="https://www.grc.nasa.gov/www/k-12/airplane/wrong1.html">https://www.grc.nasa.gov/www/k-12/airplane/wrong1.html</a>
+<h2>Designing and Building the Engine</h2>
+<p>The engine will be a low bypass turbo jet engine with an annular type combustion chamber. This engine seemed to be the easiest to make with the materials and tools I had at hand in high school. The casing is made out of a coffee can and the bearings are the same as used in skateboards. The difficulties will come in manufacturing the turbine blades, rotor blades, and stator vanes. This is because getting them all to the proper angle of attack and concave while remaining perfectly symmetrical and balanced.</p>
+<h3>Designing and Building Turbines</h3>
+<p>The turbine blades with experince high heat and have to withstand the full force of the engine, so steel is the preferred material. It is difficult to machine blades out of steel without precision machinery from a professional level shop. Bending sheetmetal to make flat blades out of a disk seemed like the best way to achieve the proper angle of attack while keeping a balanced turbine rotor. In searching online I found <a href="https://www.instructables.com/Homemade-Tin-Can-Turbine-With-3d-printed-Compresso/">someone else</a> who had a similar idea and pressed the metal in sheet metal press made out of 3d printed dies.</p>
+<img src=./images/turbine-finished-press.jpg style="height:400px;">
+<img src=./images/press-after-use.jpg style="height:400px;">
+<p>I made models to show where the sheet metal should be cut before being put in the press. It is important to drill the hole <strong><em>before</em></strong> putting the turbine in the press. Also, err on the smaller side when cutting so that you don't have to grind down the blades later.</p>
+<h3>Designing and Building Combustor</h3>
+<p>In all my research I found that a large portion of the combustor is designed by trial and error, either by building and testing prototypes or trying different designs in a <abbr title="Computational Fluid Dynamics">CFD</abbr> program. I decided to split the gas path after leaving the compressor into an inner flow and one to the outside of the liner to cool the engine housing.</p>
+<img src=./images/full-drawing.jpg style="height:400px;">
+<p>The combustion liner is made of a sheet metal cone and cylinder with holes drilled in them. Here are the tests from the <abbr title="Computational Fluid Dynamics">CFD</abbr> program I ran on my different hole configurations.</p>
+<img src=./images/fluid-simulation1.png style="height:400px;">
+<img src=./images/fluid-simulation2.png style="height:400px;">
+<img src=./images/fluid-simulation3.png style="height:400px;">
+<p>Once the liner was drilled and spot welded together we bolted it into the engine housing. Then the copper tubing with holes in it serving as the fuel line was inserted.</p>
+<img src=./images/combustion-liner-in-can-top.jpg style="height:400px">
+<img src=./images/combustion-liner-in-can.jpg style="height:400px">
+<h3>Designing and Building Compressor</h3>
+<p>The rotor blades increase the ram pressure by speeding up the air. The stator vanes increase the static pressure by slowing down the air. By alternating these rotors and vanes in multiple stages, the presssure will be increased as the volume decreases. The length of the blades decreases in the later stages as the number of blades increases.</p>
+<img src=./images/shellpic.png style="height:400px">
+<img src=./images/shell-stages.jpg style="height:400px">
+<h3>Machining the Axle</h3>
+<p>The axle is threaded on each end to take lock nuts to keep itself centered in the engine. The axle will also be keyed to take 1/8 in square bar so that the turbines can torque the axle when they are being turned. The mill in our school's tech wing was not set up as a result of our tech wing being remodeled. So we had a friend at a professional shop mill it for us.</p>
+<h3>The Test</h3>
+<p>The first test was just the combustion liner in the housing. We used compressed air to simulate the air from the air compressor.</p>
+<a href="https://youtu.be/qZWnE_8dQdU">https://youtu.be/qZWnE_8dQdU</a>
+<p>The second and final test was putting it all together and spinning it up with compressed air. Once spun up to speed, the velocity imparted on the air by the combustion should be enough for the engine to sustain itself. It did not create enough thrust to sustain itself. We belive it did not do this because we never build a diffuser to slow down the airspeed between the compressor section and the combustor section.</p>
+<a href="https://youtu.be/sN9D55REclQ">https://youtu.be/sN9D55REclQ</a>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <link rel="stylesheet" href="../styles.css">
+ <style>
+ /* The sidebar menu */
+ .sidenav {
+   width: 160px; /* Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   overflow-x: hidden; /* Disable horizontal scroll */ 
+   padding-top: 200px;
+ }
+ 
+ /* The navigation menu links */
+ .sidenav a {
+   padding: 6px 8px 6px 16px;
+   display: block;
+ }
+
+ /* Style page content */
+ .main {
+   margin-left: 160px; /* Same as the width of the sidebar */
+   padding: 0px 10px;
+ }
+ 
+ /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ } 
+ </style>
+</head>
+<body>
+
+<img src="../Logo.png" style="height:50px;">
+<div style="text-align:center;">
+<a href="../index.html">Home</a>
+<a href="../blog/blog.html">Blog</a>
+<a href="./projects.html">Projects</a>
+<a href="../about/about.html">About</a>
+<a href="../misc/misc.html">Misc</a>
+</div>
+
+<h1 style="text-align:center;background-color:#383A59">Jet Engine Project</h1>
+<div class="sidenav">
+ <a href="./jet-engine.html">Jet Engine</a>
+ <a href="#">8-bit Computer</a>
+ <a href="./alarm-clock.html">Alarm Clock</a>
+ <a href="#">Article4</a>
+</div>
+
+<div class="main">
+<h2>Alarm Clock from Logic Gates</h2>
+<p>I am building an alarm clock from gates and flip flops to learn more about digital electronics. I have not finished but here is my work so far:</p>
+<a href="./docs/alarm-clock-drawing.pdf">Drawings</a>
+</div>
+</body>
+</html>
+
