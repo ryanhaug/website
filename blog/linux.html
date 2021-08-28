@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <link rel="stylesheet" href="../styles.css">
+ <style>
+ /* The sidebar menu */
+ .sidenav {
+   width: 160px; /* Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   overflow-x: hidden; /* Disable horizontal scroll */ 
+   padding-top: 200px;
+ }
+ 
+ /* The navigation menu links */
+ .sidenav a {
+   padding: 6px 8px 6px 16px;
+   display: block;
+ }
+
+ /* Style page content */
+ .main {
+   margin-left: 160px; /* Same as the width of the sidebar */
+   padding: 0px 10px;
+ }
+ 
+ /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ } 
+ </style>
+</head>
+<body>
+
+<img src="../Logo.png" style="height:50px;">
+<div style="text-align:center;">
+<a href="../index.html">Home</a>
+<a href="./blog.html">Blog</a>
+<a href="../projects/projects.html">Projects</a>
+<a href="../about/about.html">About</a>
+<a href="../misc/misc.html">Misc</a>
+</div>
+
+<h1 style="text-align:center;background-color:#383A59">How To Try Linux</h1>
+<div class="sidenav">
+ <a href="./longboard.html">Longboard</a>
+ <a href="#">Article2</a>
+ <a href="./linux.html">Linux</a>
+ <a href="#">Article4</a>
+</div>
+
+<div class="main">
+<p>Date: Aug 28, 2021</p>
+<p align="center"><img src="./images/cautionary-xkcd.png"></p>
+<p align="center" style="color: #6272a4;">Comic sourced from <a href="https://xkcd.com/">xkcd</a></p>
+<p>This is a very basic guide on how to try out Linux if you are unsure about switching from your current operating system. I use Linux as my daily driver, and find it better than Windows and macOS. Have fun trying it out, you may end up liking it :)</p>
+<h2>Which Linux Distro To Try?</h2>
+<p>There is a huge number of different Linux distributions to choose from. A distribution of Linux is essentially the same base operating system but a changed included software and desktop enviornment. This is really cool because it really allows you to fine tune your operating system to your preferences and workflow. There are sites like <a href="https://distrowatch.com/">Distro Watch</a> that have a list of popular Linux distributions to choose from. This large number of choices may seem intimidating for some so in this guide we will only focus on two. Chances are you are a Windows or Mac user, and there are Linux distributions styled to feel familiar to these types of users:</p>
+<ul>
+ <li>Windows -&gt; Linux Mint</li>
+ <li>Mac -&gt; Ubuntu</li>
+</ul>
+<h2>How To Download</h2>
+<ul>
+ <li>If you want to use Linux Mint go <a href="https://linuxmint.com/download.php">here</a> and click Cinnamon</li>
+ <li>If you want to use Ubuntu go <a href="https://ubuntu.com/download/desktop">here</a></li>
+</ul>
+<p>Go to the according website and download the .iso file</p>
+<h2>How To Create Bootable USB</h2>
+<p>If you are on Windows you will need to install <a href="https://rufus.ie">rufus</a></p>
+<p>If you are on Mac you will need to install <a href="https://www.balena.io/etcher/">etcher</a></p>
+<p>For both tools it works essentially the same. Insert a 8Gb or larger USB drive <strong>that you have backed up all previous data on!!!!</strong> Start your flashing software (rufus or etcher) and select the .iso file as the image you want to flash. Select the harddrive and hit start. You now have a USB with a live operating system! This means that you can run linux off of this USB without ever effecting  what is on the harddrive of your computer. Of course, later if you wish to permanently change your computer's operating system you can also install Linux from the USB.</p>
+<h2>Try It Out!</h2>
+<p>Reboot your computer and press the button to pull up your boot options (usually one of the function keys, depends on your computers manufacturer). If you have trouble with this step and use Windows, you may have to turn fastboot off first. Once you pull up the boot menu, select the usb drive instead of your main harddrive and hit enter. This will boot you into the usb. Once here there should be two options presented to you: "try it out", and "install". <strong>Click "try it out" and <u>NOT</u> "install" unless you are absolutely sure that you want to overwrite your current operating system</strong>. If you clicked "try it out" you will be presented with a linux desktop. Congrats you made it!</p>
+<h2>A Few Tips</h2>
+<ul>
+ <li>To open the terminal hit CTRL+ALT+t</li>
+ <li>There are many commands in Linux, a good starting point is typing <em>help help</em> which will give you help on how to use the help command</li>
+ <li>For any command you are unsure of how to use or the syntax to use it in, type <em> man </em> and the command you are wondering about, which will bring up a page detailing how to use that command</li>
+ <li>Type <em>vi</em> or <em>vim</em> to open the vim text editor</li>
+ <li>Type <em>cd</em> to change the current directory</li>
+ <li>Type <em>ls</em> to list the contents of the current directory</li>
+ <li>Type <em>sudo</em> before a command to run it as an administrator</li>
+</ul>
+</div>
+</body>
+</html>
+
