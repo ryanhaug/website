@@ -1,2 +1,2 @@
 # website
-[ryanhaug.xyz](ryanhaug.xyz)
+[ryanhaug.xyz](https://ryanhaug.xyz/)
